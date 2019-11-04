@@ -1,11 +1,22 @@
 <template>
-<div>
-    <img alt="dev1" src="../assets/josephine.jpg">
-    <img alt="dev2" src="../assets/patrick.jpg">
-    <img alt="dev3" src="../assets/burce.jpg">
-    <img alt="dev4" src="../assets/irish.jpg">
-</div>
+  <v-card>
+    <v-row>
+      <v-col>
+        <img :src="picture" />
+      </v-col>
+      <v-col cols='10' class="text-left">
+        <h1>{{name}}</h1>
+        <h3>{{assign}}</h3>
+      </v-col>
+    </v-row>
+  </v-card>
 </template>
-
 <script>
+export default {
+  props: {
+    name: String,
+    picture: String,
+    assign: String
+  }
+};
 </script>
