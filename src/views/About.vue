@@ -1,10 +1,29 @@
 <template>
   <div class="about">
-    <h1>Developers</h1>
-    <DeveloperProfile v-bind:picture = "require('@/assets/josephine.jpg')" v-bind:name="'Josephine Morre'" v-bind:assign="'(Back-end Developer)'"></DeveloperProfile>
-    <DeveloperProfile v-bind:picture = "require('@/assets/patrick.jpg')" v-bind:name="'John Patrick Cabia-an'" v-bind:assign="'(Project Manager)'"></DeveloperProfile>
-    <DeveloperProfile v-bind:picture = "require('@/assets/burce.jpg')" v-bind:name="'Jerome Burce'" v-bind:assign="'(Front-end Developer)'"></DeveloperProfile>
-    <DeveloperProfile v-bind:picture = "require('@/assets/irish.jpg')" v-bind:name="'Irish Rufo'" v-bind:assign="'(Back-end Developer)'"></DeveloperProfile>
+    <h3>Developers</h3>
+    <DeveloperProfile 
+    	v-bind:picture = "require('@/assets/patrick.jpg')" 
+    	v-bind:name="'John Patrick Cabia-an'" 
+    	v-bind:assign="'(Project Manager)'" 
+    	v-bind:description="'He is currently studying at University of San Carlos-Talamban, Cebu City and took the 			course os Certificate of Computer Technology.'"/>
+
+    <DeveloperProfile 
+    	v-bind:picture = "require('@/assets/josephine.jpg')" 
+    	v-bind:name="'Josephine Morre1'" 
+    	v-bind:assign="'(Back-end Developer)'" 
+    	v-bind:description="'She is currently studying at University of San Carlos-Talamban, Cebu City and took the 		course os Certificate of Computer Technology.'"/>
+
+    <DeveloperProfile 
+    	v-bind:picture = "require('@/assets/burce.jpg')" 
+    	v-bind:name="'Jerome Burce'" 
+    	v-bind:assign="'(Front-end Developer)'" 
+    	v-bind:description="'He is currently studying at University of San Carlos-Talamban, Cebu City and took the 			course os Certificate of Computer Technology.'"/>
+
+    <DeveloperProfile 
+    	v-bind:picture = "require('@/assets/irish.jpg')" 
+    	v-bind:name="'Irish Rufo'" 
+    	v-bind:assign="'(Back-end Developer)'" 
+    	v-bind:description="'She is currently studying at University of San Carlos-Talamban, Cebu City and took the 		course os Certificate of Computer Technolog.y'"/>
   </div>
 </template>
 
@@ -18,3 +37,11 @@ export default {
   }
 }
 </script>
+
+<style>
+p {
+  margin-left: 0px;
+  margin-right: 300px;
+  font-family: verdana;
+}
+</style>

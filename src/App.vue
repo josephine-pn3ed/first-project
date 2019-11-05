@@ -1,9 +1,11 @@
 <template>
   <div id="app">
-    <div class="jumbotron" id="nav">
-    <NavBar/>
+    <div class="card">
+      <NavBar/>
     </div>
-    <router-view/>
+    <div class="content">
+      <router-view/>
+      </div>
   </div>
 </template>
 <script>
@@ -26,6 +28,7 @@ export default {
   color: #2c3e50;
   margin-top: 0;
 }
-#nav {
+.content {
+  margin-top: 20px;
 }
 </style>

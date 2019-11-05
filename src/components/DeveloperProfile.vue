@@ -1,22 +1,29 @@
 <template>
-  <v-card>
-    <v-row>
-      <v-col>
+  <b-card>
+    <b-row>
+      <b-col>
         <img :src="picture" />
-      </v-col>
-      <v-col cols='10' class="text-left">
-        <h1>{{name}}</h1>
-        <h3>{{assign}}</h3>
-      </v-col>
-    </v-row>
-  </v-card>
+      </b-col>
+      <b-col>
+        <p id="nameId">{{name}}</p>
+        <p>{{assign}}</p>
+        <p>{{ description }}</p>
+      </b-col>
+    </b-row>
+  </b-card>
 </template>
 <script>
 export default {
   props: {
     name: String,
     picture: String,
-    assign: String
+    assign: String,
+    description: String
   }
 };
 </script>
+<style>
+#nameId {
+  font-size: 20px;;
+}
+</style>
